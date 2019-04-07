@@ -1,5 +1,5 @@
 import json
-# its don't work. I try fix it... someday...
+# its don't work. I will try fix it... someday...
 command = ''
 level = ['']
 spawn = [0,0,0]
