@@ -19,8 +19,8 @@ except ImportError:
         input("Press ENTER to continue...")
         raise SystemExit(-2)
     print("Pygame установлена, перезапустите игру")
-    raise SystemExit(0)
     input("Press ENTER to continue...")
+    raise SystemExit(0)
 
 from Bot import Bot, NPS, Entity
 from Camera import Camera
