@@ -1,13 +1,29 @@
+import socket as sk
+import pickle as pkl
+import json
+import sys
+
+try:
+    import pygame as pg
+except ImportError:
+    print("Библиотека pygame не найдена, пробую установить...")
+    try:
+        import pip
+        pip.main(["install", "pygame"])
+    except ImportError:
+        print("Не найден pip")
+        raise SystemExit(-1)
+    except Exception as e:
+        print("Ошибка: %s" % str(e))
+        raise SystemExit(-2)
+    print("Pygame установлена, перезапустите игру")
+    raise SystemExit(0)
+
 from Bot import Bot, NPS, Entity
 from Camera import Camera
 from Object import Object
 from Decor import Decor
 from UI import UI
-import socket as sk
-import pickle as pkl
-import pygame as pg
-import json
-import sys
 
 
 class Activity:
